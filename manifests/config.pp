@@ -18,13 +18,15 @@ class acpid::config inherits acpid {
     owner   => root,
     group   => root,
     mode    => '0644',
-    source  => 'puppet:///acpid/handlers',
+    recurse => true,
+    source  => 'puppet:///modules/acpid/handlers',
   }
   file { "$config_dir/events":
     ensure  => directory,
     owner   => root,
     group   => root,
     mode    => '0644',
-    source  => 'puppet:///acpid/events',
+    recurse => true,
+    source  => 'puppet:///modules/acpid/events',
   }
 }
