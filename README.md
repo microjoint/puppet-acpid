@@ -19,10 +19,7 @@ The acpid module installs, configures, and manages the acpid service.
 
 ##Module Description
 
-The acpid module handles running acpid across a range of operating systems and
-distributions.  Where possible we use the upstream acpid templates so that the
-results closely match what you'd get if you modified the package default conf
-files.
+The acpid module handles running acpid mainly on Arch Linux. Were possible I have added other distributions where known.
 
 ##Setup
 

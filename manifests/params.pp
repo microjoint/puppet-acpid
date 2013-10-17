@@ -1,6 +1,6 @@
 class acpid::params {
 
-  $config_template          = 'acpid/handler.sh.erb'
+  $config_file              = 'modules/acpid/handler.sh'
   $service_ensure           = 'stopped'
   $service_enable           = true
   $service_manage           = true
@@ -11,8 +11,9 @@ class acpid::params {
     'Archlinux': {
       $config           = '/etc/acpi/handler.sh'
       $config_dir       = '/etc/acpi/'
-      $config_events    = '/modules/acpid/events'
-      $config_handlers  = '/modules/acpid/handlers'
+      $config_actions   = 'modules/acpid/actions'
+      $config_events    = 'modules/acpid/events'
+      $config_handlers  = 'modules/acpid/handlers'
       $service_name     = 'acpid'
     }
     'Linux': {
