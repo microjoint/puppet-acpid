@@ -8,7 +8,7 @@ class acpid::config inherits acpid {
     source  => "puppet:///$config_file",
   }
   file { $config_dir:
-    ensure  => file,
+    ensure  => directory,
     owner   => root,
     group   => root,
     mode    => '0644',
