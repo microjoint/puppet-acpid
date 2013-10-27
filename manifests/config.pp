@@ -37,4 +37,5 @@ class acpid::config inherits acpid {
     recurse => true,
     source  => "puppet:///$config_handlers",
   }
+
 }

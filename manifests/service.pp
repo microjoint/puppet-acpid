@@ -13,4 +13,5 @@ class acpid::service inherits acpid {
       hasrestart => true,
     }
   }
+
 }

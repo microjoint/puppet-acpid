@@ -75,7 +75,7 @@ class { '::acpid':
 class { '::acpid':
   service_enable  => true,
   package_name    => 'acpid-beta',
-  manage_service => false,
+  manage_service  => false,
 }
 ```
 
